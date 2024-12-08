@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: auto;
+    width: 100%;
+    background-color: rgb(203, 147, 255);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+
+.navlinks li {
+    margin: 0 20px;
+}
+
+
+.navlinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+.navlinks a:hover {
+    color: #b4c6f5;
+}
+
+
+body {
+    font-family: "Baskerville Old Face";
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.profile-card {
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(226, 211, 225);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 800px;
+    border: 2px solid black;
+}
+
+.profile-card img {
+    border-radius: 60%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    color: #131212;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.profile-card button {
+    background-color: #0010a5;
+    color: white;
+    border: black;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.home-section,
+#about #project #contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+    /* Add space between sections */
+}
+
+
+.profile-card,
+.about-container,
+.contact-section {
+    width: 800px;
+    max-width: 100%;
+    /* Make it responsive */
+    border: black;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 70px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.profile-card {
+    background-color: rgb(227, 197, 255);
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    margin: 70px auto;
+    border: 2px solid black;
+    width: 800px;
+}
+
+.about-container,
+.contact-section {
+    background-color: rgb(227, 197, 255);
+    font-size: 16px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.about-container h2,
+.contact-section h2 {
+    font-size: 30px;
+    background-color: rgb(227, 197, 255);
+    color: #131212;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-container {
+    margin: 70px;
+    display: flex;
+}
+
+.project-container .h2 {
+    text-align: center;
+}
+
+.project-container .project1,
+.project2 {
+    background-color: rgb(226, 211, 225);
+    width: 600px;
+    font-size: 16px;
+    padding: 20px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.project-container .img,
+.h2,
+.p {
+    padding: 10px 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-form {
+    max-width: 600px;
+    height: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(80, 76, 76);
+    border-radius: 10px;
+    background-color: rgb(199, 198, 198);
+
+
+}
+
+.h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 20px;
+    ;
+    margin-bottom: 10px;
+}
+
+.input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    /* Padding inside the button */
+    font-size: 16px;
+    /* Text size */
+    font-family: Arial, sans-serif;
+    /* Font family */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+
+}
+
+.skill-container {
+    display: flex;
+}
+
+.html,
+.java,
+.css,
+.js,
+.sql,
+.softskills {
+    max-width: 600px;
+    height: 230px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(80, 76, 76);
+    border-radius: 10px;
+    background-color: rgb(192, 198, 255);
+}
